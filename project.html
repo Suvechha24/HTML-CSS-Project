@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging site</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.QOKLFI7-SMhiupT6OwdiWwHaDe&pid=Api&P=0&h=180');
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        form{
+            border: 1px solid black;
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            background-color: rgba(255, 183, 206, 0.2);
+            margin-bottom: 25px;
+            border-radius: 10px;
+            animation: glow 0.5s infinite alternate;
+        }
+        @keyframes glow {
+            0%{
+                box-shadow: 0 0 10px lightblue;
+            }
+            50%{
+                box-shadow: 0 0 20px lightblue;
+            }
+            100%{
+                box-shadow: 0 0 30px lightblue;
+            }
+        }
+        .form-group{
+            display: flex;
+            margin-bottom: 5px;
+        }
+        label{
+            width: 80px;
+            font-weight: bold;
+        }
+        .h1{
+            margin-top: 0;
+            background-image: linear-gradient(to right,orange,rgb(246, 230, 201));
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        img{
+            height: 100%;
+            width: 250px;
+        }
+
+        .card{
+            border: 1px solid black;
+            width: 400px;
+            height: max-content;
+            margin: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            background-color:rgba(255, 183, 206, 0.2);
+            cursor: pointer;
+        }
+
+        .section1{
+            display: flex;
+        }
+
+        
+        .card>h2{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 20px;
+            
+        }
+
+        .card>p{
+            background-color: skyblue;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .card>h4{
+            background-color: cadetblue;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card:hover{
+            transition: transform 1s ease;
+            transform: translateX(10px) translateY(10px);
+        }
+
+        .about{
+            border: 1px solid black;
+            width: 300px;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: blanchedalmond;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        button[type=submit]
+        {
+            background-color: palevioletred;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button[type=submit]:hover{
+            border: 1px solid black;
+            box-shadow: 0 0 16px goldenrod;
+            border-radius: 20px;
+        }
+
+        .feed{
+            width: fit-content;
+            animation: dance 0.5s infinite alternate;
+        }
+
+        @keyframes dance {
+            0%{
+                transform: translateY(-5px);
+            }
+            
+            100%{
+                transform: translateY(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="h1">Welcome to our Blogging Site</h1>
+    </div>
+
+    <u><h1><span style="color: red;">O</span>ur <span style="color: red;">P</span>osts</h1></u>
+    <section class="section1">
+        <div class="card">
+            <h2>Posted By: Subhojit Mitra</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam blanditiis necessitatibus saepe perspiciatis, alias qui aut praesentium, earum unde, optio rem. Quaerat eos natus, dolorem reiciendis perferendis error fuga.</p>
+            <img src="https://alchetron.com/cdn/bill-gatess-house-780554bd-f10a-4869-8fdd-8b177c47b10-resize-750.jpeg" alt="No Image">
+            <h4><span style="color: red;">*</span>Posted at: 20th July, 2024</h4>
+        </div>
+        <div class="card">
+            <h2>Posted By: Mithai</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam blanditiis necessitatibus saepe perspiciatis, alias qui aut praesentium, earum unde, optio rem. Quaerat eos natus, dolorem reiciendis perferendis error fuga.</p>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.suiDlf-_NEVrliBIYw8p1wHaE7&pid=Api&P=0&h=180" alt="No Image">
+            <h4><span style="color: red;">*</span>Posted at: 20th July, 2024</h4>
+        </div>
+        <div class="card">
+            <h2>Posted By: Nisha Kumari Singh</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam blanditiis necessitatibus saepe perspiciatis, alias qui aut praesentium, earum unde, optio rem. Quaerat eos natus, dolorem reiciendis perferendis error fuga.</p>
+            <img src="https://www.getbengal.com/uploads/story_image/ITC_water_plant.jpg" alt="No Image">
+            <h4><span style="color: red;">*</span>Posted at: 20th July, 2024</h4>
+        </div>
+    </section>
+
+    <section class="section2">
+        <u><h1>About Us</h1></u>
+        <div class="about">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis modi enim veritatis facilis sapiente nihil repellendus explicabo aliquam aspernatur et minima eius totam ut, ipsam accusantium autem dolorum sed! Ut?
+        </div>
+    </section>
+    <br><br>
+    <section class="section2">
+        <u><h1>Contact Us</h1></u>
+        <form>
+            <div class="form-group">
+                <label for="">Name: </label>
+                <input placeholder="What's Your Name? Darlo!!" style="background-color: transparent;" type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Email: </label>
+                <input placeholder="Your Mail?, Sweety" style="background-color: transparent;" type="email">
+            </div><br><br>
+            <div class="feed">
+            <label style="background-color: purple;padding:  8px; color: aliceblue; border-radius: 8px;" class="feedlabel" style="margin-top: 20px;" for="">Say Something!!!</label>
+        </div><br><br>
+            <textarea placeholder="What's Your Thought About Us? Huh" style="background-color: transparent; border-radius: 5px; width: 81%; height: 60px;" rows="10" cols="20"></textarea>
+            <center><button type="submit">Send to Us</button></center>
+        </form>
+    </section>
+
+    <footer>
+        &copy; Copyright by Nisha Kumari Singh and Mithai 2024
+    </footer>
+</body>
+</html>
